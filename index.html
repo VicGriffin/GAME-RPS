@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/pad.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="mainPart">
+        <div class="game-header">
+          <p class="copyright">
+            &copy; 2024
+            <a href="https://www.linkedin.com/in/victor-kamau-30b23720b/" target="_blank">Victor Kamau</a>
+          </p>
+          <p class="scores" id="scores">computer 0 0 player</p>
+        </div>
+        <div class="emoji-box computerScore" id="computer-box">
+          <p class="computer-box--title">Computer</p>
+          <p class="emoji" id="computer-choice-emoji">✌️</p>
+        </div>
+        <p class="winner-announcement" id="winner-announcement">currently draw</p>
+        <div class="emoji-box" id="emoji-box">
+          <p class="emoji-box--title">Player</p>
+          <p class="emoji" id="player-choice-emoji">✌️</p>
+        </div>
+      </div>
+      <div class="scores"></div>
+      <div class="user-choices">
+        <button class="choice-button" id="rock-btn">
+          <p class="button-emoji">✊</p>
+          <p class="button-text">rock</p>
+        </button>
+        <button class="choice-button" id="paper-btn">
+          <p class="button-emoji">✋</p>
+          <p class="button-text">paper</p>
+        </button>
+        <button class="choice-button" id="scissors-btn">
+          <p class="button-emoji">✌️</p>
+          <p class="button-text">scissors</p>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

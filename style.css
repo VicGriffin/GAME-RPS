@@ -1,0 +1,137 @@
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap";
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.u-marg-top {
+  margin-top: 3rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #9ec91e;
+  width: 50vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainPart {
+  width: 100%;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.scores,
+.copyright {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 28.125em) {
+  .game-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.emoji {
+  font-size: 10rem;
+  --size: 13rem;
+  width: var(--size);
+  height: var(--size);
+  border: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.emoji-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner-announcement {
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background-color: #f2c244;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.user-choices {
+  margin-top: 2rem;
+}
+
+.choice-button {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-emoji {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.button-text {
+  font-family: "Press Start 2P", sans-serif;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 56.25em) {
+  #app {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 28.125em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 21.875em) {
+  .user-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
